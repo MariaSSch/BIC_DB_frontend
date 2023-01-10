@@ -1,0 +1,23 @@
+.card
+    padding: 0 16px
+    text-align: left
+    border: 1px solid grey
+    border-radius: 5px
+    box-shadow: 3px 3px 10px #c56cf0
+    max-width: 335px
+    background-color: #fff
+    &:hover
+        transform: scale(1.2)
+        transition: transform 0.5s ease-out
+    p
+        position: relative
+        &:nth-child(-n+2)::after
+            content: ""
+            height: 1px
+            width: 100%
+            background-color: #c56cf0
+            position: absolute
+            bottom: -8px
+            left: 0px
+        span
+            font-weight: 500
